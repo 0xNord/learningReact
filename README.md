@@ -12,4 +12,4 @@
 ```
 ## методы React
 - ReactDOM.render(JSX,destination);
-	- destination = document.querySelector("#some");
+	- var destination = document.querySelector("#some"); // outside render
