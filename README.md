@@ -10,4 +10,6 @@
 ```html
 <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 ```
-
+## методы React
+- ReactDOM.render(JSX,destination);
+	- destination = document.querySelector("#some");
