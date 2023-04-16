@@ -13,3 +13,18 @@
 ## методы React
 - ReactDOM.render(JSX,destination);
 	- var destination = document.querySelector("#some"); // outside render
+## Компоненты React
+```jsx
+class ComponentName extends React.Component {
+	render(){
+		return (
+			<div>
+				<button type={this.props.behavior}>
+					{this.props.children}
+				</button>
+			</div>
+		)
+	}
+}
+<ComponentName behavior="submit">Send Data</ComponentName>
+```
