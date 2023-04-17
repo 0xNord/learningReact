@@ -10,11 +10,45 @@
 	<style>
 		#container {
 			padding: 50px;
-			background-color: #fff;
+			background-color: #ffe;
+		}
+		.letter {
+			padding: 10px;
+			margin: 10px;
+			background-color: #ffde00;
+			color: #333;
+			display: inline-block;
+			font-family: monospace;
+			font-size: 32px;
+			text-align: center;
 		}
 	</style>
 </head>
 <body>
 	<div id="container"></div>
+	<script type="text/babel">
+		var destination = document.querySelector("#container");
+
+		class Letter extends React.Component {
+			render() {
+				return (
+					<div className="letter">
+						{this.props.children}
+					</div>
+				);
+			}
+		}
+
+		ReactDOM.render(
+			<div>
+				<Letter>A</Letter>
+				<Letter>E</Letter>
+				<Letter>И</Letter>
+				<Letter>О</Letter>
+				<Letter>У</Letter>
+			</div>,
+			destination
+		);
+	</script>
 </body>
 </html>
