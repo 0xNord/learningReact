@@ -28,3 +28,5 @@ class ComponentName extends React.Component {
 }
 <ComponentName behavior="submit">Send Data</ComponentName>
 ```
+#стилизация
+- className!! instead of class(js)
